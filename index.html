@@ -6,17 +6,18 @@
 </head>
 <body>
 <h1>Teletál megrendelés</h1>
-<p>A program használatához mentse az alábbi linket a Kedvenc hivatkozások közé böngészőjében. Internet Explorer használata ajánlott.<br />
-<a href='javascript:(function(){(function(){function%20loadScript(url,callback){var%20script=document.createElement("script");script.type="text/javascript";if(script.readyState){script.onreadystatechange=function(){if(script.readyState=="loaded"||script.readyState=="complete"){script.onreadystatechange=null;callback();}};}else{script.onload=function(){callback();};}script.src=url;document.getElementsByTagName("head")[0].appendChild(script);}loadScript("//kjaron.extra.hu/teletal/script.js?_="+Math.floor(Math.random()*1000000),function(){});})();})();'>Teletál megrendelés</a></p>
-<p>Amikor a teletal.hu oldalon tartózkodik, hívja elő a Kedvencek közül az elmentett hivatkozást. Ekkor a program betöltődik a böngészőbe és használhatja a kiegészítő funkciókat. Fontos, minden alkalommal, mikor a böngésző újratölti az oldalt (belépés, heti menü kiválasztása, kosár megtekintése, megrendelés) a program további használatához újra be kell tölteni.</p>
+<p>A program használatához mentse az alábbi linket a Kedvenc hivatkozások közé böngészőjében.<br />
+<a href="javascript:(function()%7B(function%20()%20%7Bfunction%20loadScript(url%2C%20callback)%20%7Bvar%20script%20%3D%20document.createElement(%22script%22)%3Bscript.type%20%3D%20%22text%2Fjavascript%22%3Bif%20(script.readyState)%20%7Bscript.onreadystatechange%20%3D%20function%20()%20%7Bif%20(script.readyState%20%3D%3D%20%22loaded%22%20%7C%7C%20script.readyState%20%3D%3D%20%22complete%22)%20%7Bscript.onreadystatechange%20%3D%20null%3Bcallback()%3B%7D%7D%3B%7D%20else%20%7Bscript.onload%20%3D%20function%20()%20%7Bcallback()%3B%7D%3B%7Dscript.src%20%3D%20url%3Bdocument.getElementsByTagName(%22head%22)%5B0%5D.appendChild(script)%3B%7DloadScript(%22https%3A%2F%2Frawcdn.githack.com%2Fkjaron83%2FLunchOrdering%2Fe96e7f7216b100a183d33a1654d43dba4467c6ce%2Fscript.js%3F_%3D%22%20%2B%20Math.floor(Math.random()*1000000)%2C%20function%20()%20%7B%7D)%3B%7D)()%7D)()">Teletál megrendelés</a></p>
+<p>Amikor a teletal.hu oldalon tartózkodik, hívja elő a Kedvencek közül az elmentett hivatkozást. Ekkor a program betöltődik a böngészőbe és használhatja a kiegészítő funkciókat. Fontos, minden alkalommal, mikor a böngésző újratölti az oldalt (belépés, heti menü kiválasztása, kosár megtekintése, nyomtatás, megrendelés) a program további használatához újra be kell tölteni.</p>
 <h2>Használható parancsok:</h2>
 <ul>
   <li><strong>info</strong>: A programban használható parancsok felsorolása.</li>
-  <li><strong>exit</strong>: Kilépés a programból.</li>
+  <li><strong>kilep</strong>: Kilépés a programból.</li>
   <li>A heti étlap kiválasztásához adja meg a hét sorszámát, egy pontot és a "het" szót.<br />Pl.: 11. het</li>
   <li>Megrendeléshez adja meg szóközzel elválasztva a hét napjának sorszámát, az étel kódját és hogy hány adag kell belőle.<br />Pl.: 1 B2 1 (Hétfő B2 1 adag)</li>
   <li><strong>kosar</strong>: Kilépés és tovább a kosárhoz.</li>
   <li><strong>lista</strong>: A kosár tartalmának listája.</li>
+  <li><strong>nyomtat</strong>: A kosár tartalmának nyomtatása.</li>
   <li><strong>etlap</strong>: Visszalépés az étlaphoz.</li>
   <li><strong>megrendeles</strong>: A kosárban lévő termékek megrendelése.</li>
 </ul>

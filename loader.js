@@ -22,7 +22,7 @@
         document.getElementsByTagName("head")[0].appendChild(script);
     }
  
-    loadScript("http://kjaron.extra.hu/teletal/script.js?_="+Math.floor(Math.random()*1000000), function () {           
+    loadScript("https://rawcdn.githack.com/kjaron83/LunchOrdering/e96e7f7216b100a183d33a1654d43dba4467c6ce/script.js?_=" + Math.floor(Math.random()*1000000), function () {           
     });         
   
 })();
